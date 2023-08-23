@@ -1,0 +1,25 @@
+<div class="{{ divColor }}">
+  <p>{{ appName }} - {{ appVersion }}</p>
+
+</div>
+
+
+<nav>
+  <ng-template [(ngIf)]="userService.user">
+  <button mat-stroked-button class="button" routerLink="/home" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Home</button>
+    |
+  <button mat-stroked-button class="button" routerLink="/login" (click)="onLogout()" routerLinkActive="activebutton" ariaCurrentWhenActive="page">Logout</button>
+</ng-template>
+</nav>
+<ng-template [(ngIf)]="userService.user" >
+<!-- [ngIfElse]="loggedOut"> -->
+  <i>
+    User: {{ userService.user.id }} | Email: {{ userService.user.email }}
+  </i>
+</ng-template>
+
+<!-- <ng-template #loggedOut>
+  <i>You must Loggin</i>
+</ng-template> -->
+
+<router-outlet></router-outlet>

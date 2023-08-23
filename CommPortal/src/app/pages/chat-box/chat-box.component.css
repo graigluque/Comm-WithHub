@@ -1,0 +1,74 @@
+.inboxContainer {
+    /* width: 42vw; */
+    width: 64vw;
+    height: 60vh;
+    border: 1px solid black;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    /* overflow: scroll; */
+}
+
+.newMessageContainer {
+    margin: auto;
+    position: absolute;
+    top: 80vh;
+    left: 20vw;
+    bottom: 0;
+    right: 0;
+}
+
+.mat-form-field {
+    /* width: 35vw; */
+    width:70vw;
+    top: 0.1vh;
+}
+
+.textarea {
+    width: 70vw;
+}
+
+
+.mat-button {
+    left: 4vw;
+    top: 1.4vh;
+    background-color: #B29B59;
+}
+
+.sendMessageContainer {
+    margin: auto;
+    position: absolute;
+    top: 85vh;
+    left: 65vw;
+    bottom: 0;
+    right: 0;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.date {
+    border: 1px solid black;
+    /* width: 20vw; */
+    width: 30vw;
+    border-right: none;
+    border-left: none;
+}
+
+.sender {
+    border: 1px solid black;
+    /* width: 20vw; */
+    width: 30vw;
+    border-left: none;
+}
+
+.answer {
+    /* width: 38.8vw; */
+    width: 53.8vw;
+    height: auto;
+}

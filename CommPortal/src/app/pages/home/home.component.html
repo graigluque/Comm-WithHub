@@ -1,0 +1,26 @@
+<p>home works!</p>
+
+
+<table class="table table-bordered table-hover">
+    <tr *ngFor="let item of allGroups">
+      <td>{{item.id}}</td>
+      <td>-</td>
+      <td>{{item.groupName}}</td>
+      <!-- <td>|</td>
+      <td>{{item.scope}}</td>
+      <td>|</td>
+      <td>{{item.createdBy}}</td>
+      <td>|</td>
+      <td> {{ convertToLocalDate(item.createdAt) }}</td> -->
+      <td>
+          <button type="button" class="btn btn-success btn-sm" (click)="goToSelectedGroup(item)">Select</button>
+      </td>
+    </tr>
+  </table>
+
+
+
+
+
+
+<!-- <button mat-flat-button color="primary" (click)="onLogout()" routerLink="/login">Logout</button> -->

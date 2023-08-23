@@ -1,0 +1,19 @@
+<p>LOGIN PAGE</p>
+<br>
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>User Id</mat-label>
+        <input matInput placeholder="Ex. userIdxyz" [(ngModel)]="userId">
+        <!-- <mat-hint>Max {{firstText.length}}/10</mat-hint> -->
+    </mat-form-field>
+</p>
+
+<p>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput placeholder="Ex. john.doe@email.com" [(ngModel)]="email">
+        <!-- <mat-hint>Max {{email.length}}/10</mat-hint> -->
+    </mat-form-field>
+</p>
+
+<button mat-stroked-button color="primary" (click)="onLogin(userId, email)">Login</button>

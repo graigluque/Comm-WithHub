@@ -1,0 +1,36 @@
+<p>Group: {{ groupId }}</p>
+<!-- 
+<ng-template ngFor let-item [(ngForOf)]="allMessages" 
+let-i="index">
+    <li>
+        <p>No. {{ i }}</p>
+        <p>Text: {{ item.content }}</p>
+        <p>Created At: {{ item.createdAt }}</p>
+    </li>
+</ng-template> -->
+
+<div #target class="inboxContainer">
+    <ng-template ngFor let-msg [(ngForOf)]="allMessages" let-i="index">
+        <tr>
+            <div #itemID class="wrapper">
+                <div class="sender"><i>Sender: </i>{{msg.senderEmail}}</div>
+                <div class="date"><i>Date: </i>{{ convertToLocalDate(msg.createdAt) }}</div>
+            </div>
+            <div class="answer"><i>Message: </i><br>{{msg.content}}<br></div>
+        </tr>
+    </ng-template>
+</div>
+<div>
+    <div class="newMessageContainer">
+        <p>New Message</p>
+        <mat-form-field>
+            <textarea matInput cdkTextareaAutosize [(ngModel)]="newMessageText" 
+            cdkTextareaAutosize="true"
+                cdkAutosizeMinRows="3" 
+                maxlength="400" [disabled]="sending"></textarea>
+        </mat-form-field>
+    </div>
+    <div class="sendMessageContainer">
+        <button mat-stroked-button (click)="sendMessage(newMessageText)" [disabled]="sending">Send</button>
+    </div>
+</div>

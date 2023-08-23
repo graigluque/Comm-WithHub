@@ -1,0 +1,61 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    height: 100%;
+    margin: 10px;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.mat-button {
+    color: #155724;
+}
+
+.mat-button.mat-success,
+.mat-stroked-button.mat-success {
+    color: #155724;
+}
+
+.mat-button.mat-success:hover,
+.mat-stroked-button.mat-success:hover {
+    background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-success,
+.mat-flat-button.mat-success,
+.mat-fab.mat-success,
+.mat-mini-fab.mat-success {
+    color: #f0fff3;
+    background-color: #155724;
+}
+
+.mat-icon-button.mat-success {
+    color: #155724;
+}
+
+.mat-button.mat-clear,
+.mat-stroked-button.mat-clear {
+    color: #155724;
+}
+
+.mat-button.mat-clear:hover,
+.mat-stroked-button.mat-clear:hover {
+    background-color: #f0fff3;
+}
+
+.mat-raised-button.mat-clear,
+.mat-flat-button.mat-clear,
+.mat-fab.mat-clear,
+.mat-mini-fab.mat-clear {
+    color: #f0fff3;
+    background-color: #9b7713;
+}
+
+.mat-icon-button.mat-clear {
+    color: #9b7713;
+}
